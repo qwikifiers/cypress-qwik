@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "peerDependencies": {
-    "cypress": ">=10.6.0"
+    "cypress": ">=10.6.0",
+    "@builder.io/qwik": "^0.16.0"
   }
 }

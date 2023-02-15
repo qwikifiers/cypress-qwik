@@ -21,6 +21,12 @@
   "references": [
     {
       "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./cypress/tsconfig.cy.json"
+    },
+    {
+      "path": "./tsconfig.editor.json"
     }
   ],
   "include": ["src"]
