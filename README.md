@@ -81,7 +81,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 - [Cypress-Qwik Discord](https://discord.gg/PVWUUejrez)
 - [Qwik Docs](https://qwik.builder.io/)
-- [Cypress Docs](https://qwik.builder.io/)
+- [Cypress Docs](https://www.cypress.io/)
 
 
 ## License
