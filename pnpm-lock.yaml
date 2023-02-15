@@ -7,6 +7,7 @@ specifiers:
   '@commitlint/config-angular': ^17.4.3
   '@commitlint/config-conventional': ^17.4.3
   '@cypress/code-coverage': 3.10.0
+  '@cypress/mount-utils': 4.0.0
   '@jscutlery/semver': ^2.30.1
   '@nrwl/cli': 15.7.0
   '@nrwl/cypress': 15.7.0
@@ -58,6 +59,7 @@ devDependencies:
   '@commitlint/config-angular': 17.4.3
   '@commitlint/config-conventional': 17.4.3
   '@cypress/code-coverage': 3.10.0_cypress@12.5.1
+  '@cypress/mount-utils': 4.0.0
   '@jscutlery/semver': 2.30.1
   '@nrwl/cli': 15.7.0
   '@nrwl/cypress': 15.7.0_yzdwo4oumopst5dbhrfmwb5fea
@@ -1577,6 +1579,10 @@ packages:
       - babel-loader
       - supports-color
       - webpack
+    dev: true
+
+  /@cypress/mount-utils/4.0.0:
+    resolution: {integrity: sha512-4w8WZpOALz5+vhJmPfh2HkT4NMsRP2DgVqSXxXu46GR5yUGfqJ0+WgUrmVuujtKKY6n1mDiO1L4AfZ+4bsEYGQ==}
     dev: true
 
   /@cypress/request/2.88.11:

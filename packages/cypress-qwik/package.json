@@ -1,5 +1,8 @@
 {
   "name": "cypress-qwik",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "module",
+  "peerDependencies": {
+    "cypress": ">=10.6.0"
+  }
 }

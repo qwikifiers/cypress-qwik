@@ -1,1 +1,1 @@
-export * from './lib/cypress-qwik';
+export * from './lib/mount';
