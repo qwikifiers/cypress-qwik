@@ -18,6 +18,9 @@ tsconfig.tsbuildinfo
 !.vscode/extensions.json
 !.vscode/qwik.code-snippets
 
+# Cypress
+**/cypress/videos/**
+
 # Logs
 logs
 *.log

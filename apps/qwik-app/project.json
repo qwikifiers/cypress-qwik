@@ -65,7 +65,7 @@
         "lintFilePatterns": ["apps/qwik-app/**/*.{ts,tsx,js,jsx}"]
       }
     },
-    "component-test": {
+    "ct": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/qwik-app/cypress.config.ts",

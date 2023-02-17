@@ -5,13 +5,23 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/vite:build",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/cypress-qwik",
-        "main": "packages/qwik-nx/src/index.ts",
-        "tsConfig": "packages/qwik-nx/tsconfig.lib.json",
-        "assets": ["README.md"]
+        "main": "packages/cypress-qwik/src/index.ts",
+        "tsConfig": "packages/cypress-qwik/tsconfig.lib.json",
+        "assets": [
+          "README.md",
+          "CONTRIBUTING.md",
+          "CODE_OF_CONDUCT.md",
+          "LICENSE",
+          {
+            "input": "./assets",
+            "glob": "cypress-qwik.png",
+            "output": "./assets"
+          }
+        ]
       }
     },
     "lint": {
@@ -19,6 +29,29 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["packages/cypress-qwik/**/*.ts"]
+      }
+    },
+    "version-publish": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "noVerify": true,
+        "push": true,
+        "releaseAs": "patch",
+        "postTargets": ["cypress-qwik:publish", "cypress-qwik:push-to-github"]
+      }
+    },
+    "publish": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public",
+        "distFolderPath": "packages/cypress-qwik"
+      }
+    },
+    "push-to-github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
       }
     }
   },

@@ -1,3 +1,10 @@
+<p align="center">
+<br/>
+  <img width="400" src="./assets/cypress-qwik.png" alt="Qwik loves Cypress">
+  <br/>
+  <br/>
+</p>
+
 <h1 align='center'>Cypress Qwik plugin</h1>
 
 <div align='center'>
@@ -20,6 +27,8 @@
 ## Table of Contents
 
 - [Installation](#installation)
+- [Configuring Cypress](#configuring-cypress)
+- [Usage](#usage)
 - [Contributing](#contributing)
 - [Code Of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
@@ -27,11 +36,48 @@
 - [License](#license)
 
 
-
 ## Installation
 
 ```console
 npm install -D cypress-qwik
+```
+
+## Configuring Cypress
+
+```ts
+// cypress.config.ts
+
+import { defineConfig } from 'cypress';
+
+export default defineConfig({
+  component: {
+    devServer: {
+      bundler: 'vite',
+    } as any,
+  },
+});
+
+```
+
+## Usage
+
+```ts
+// some-test.cy.ts
+
+import { mount } from 'cypress-qwik';
+import MyComp from './my-comp';
+
+describe(`Qwik Component Test`, () => {
+  
+  it('should find my link', () => {
+
+    mount(<MyComp />);
+
+    cy.contains('myLink').should('exist');
+  });
+});
+
+
 ```
 
 <br/>
