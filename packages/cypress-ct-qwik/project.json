@@ -1,16 +1,16 @@
 {
-  "name": "cypress-qwik",
+  "name": "cypress-ct-qwik",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/cypress-qwik/src",
+  "sourceRoot": "packages/cypress-ct-qwik/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/cypress-qwik",
-        "main": "packages/cypress-qwik/src/index.ts",
-        "tsConfig": "packages/cypress-qwik/tsconfig.lib.json",
+        "outputPath": "dist/packages/cypress-ct-qwik",
+        "main": "packages/cypress-ct-qwik/src/index.ts",
+        "tsConfig": "packages/cypress-ct-qwik/tsconfig.lib.json",
         "assets": [
           "README.md",
           "CONTRIBUTING.md",
@@ -28,7 +28,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/cypress-qwik/**/*.ts"]
+        "lintFilePatterns": ["packages/cypress-ct-qwik/**/*.ts"]
       }
     },
     "version": {
@@ -43,14 +43,17 @@
         "noVerify": true,
         "push": true,
         "releaseAs": "patch",
-        "postTargets": ["cypress-qwik:publish", "cypress-qwik:push-to-github"]
+        "postTargets": [
+          "cypress-ct-qwik:publish",
+          "cypress-ct-qwik:push-to-github"
+        ]
       }
     },
     "publish": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
         "access": "public",
-        "distFolderPath": "packages/cypress-qwik"
+        "distFolderPath": "packages/cypress-ct-qwik"
       }
     },
     "push-to-github": {

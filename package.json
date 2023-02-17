@@ -1,5 +1,5 @@
 {
-  "name": "cypress-qwik",
+  "name": "cypress-qwik-root",
   "version": "0.0.0",
   "description": "Qwik Component Testing with Cypress",
   "engines": {

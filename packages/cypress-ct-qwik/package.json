@@ -1,6 +1,6 @@
 {
-  "name": "cypress-qwik",
-  "version": "0.0.2",
+  "name": "cypress-ct-qwik",
+  "version": "0.0.0",
   "type": "module",
   "peerDependencies": {
     "cypress": ">=10.6.0",

@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "cypress-qwik": ["packages/cypress-qwik/src/index.ts"]
+      "cypress-ct-qwik": ["packages/cypress-ct-qwik/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

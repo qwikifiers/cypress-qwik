@@ -11,8 +11,8 @@
   The cypress component testing plugin for <a href='https://github.com/BuilderIO/qwik'>Qwik</a>
   <br><br>
 
-  <a href='https://img.shields.io/npm/v/cypress-qwik?label=npm%20version'>
-  <img src='https://img.shields.io/npm/v/cypress-qwik?label=npm%20version' alt='cypress-qwik npm'>
+  <a href='https://img.shields.io/npm/v/cypress-ct-qwik?label=npm%20version'>
+  <img src='https://img.shields.io/npm/v/cypress-ct-qwik?label=npm%20version' alt='cypress-ct-qwik npm'>
   </a>
   <a href='https://opensource.org/licenses/MIT'>
   <img src='https://img.shields.io/badge/License-MIT-green.svg' alt='MIT'>
@@ -39,7 +39,7 @@
 ## Installation
 
 ```console
-npm install -D cypress-qwik
+npm install -D cypress-ct-qwik
 ```
 
 ## Configuring Cypress
@@ -64,7 +64,7 @@ export default defineConfig({
 ```ts
 // some-test.cy.ts
 
-import { mount } from 'cypress-qwik';
+import { mount } from 'cypress-ct-qwik';
 import MyComp from './my-comp';
 
 describe(`Qwik Component Test`, () => {

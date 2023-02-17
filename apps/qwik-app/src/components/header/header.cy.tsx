@@ -1,4 +1,4 @@
-import { mount } from 'cypress-qwik';
+import { mount } from 'cypress-ct-qwik';
 import Header from './header';
 
 describe(`header component test`, () => {
