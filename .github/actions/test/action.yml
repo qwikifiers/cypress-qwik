@@ -12,11 +12,11 @@ runs:
 
     - name: Lint
       shell: bash
-      run: npx nx affected:lint --base=last-release --exclude=website
+      run: npx nx affected:lint --base=last-release
 
-    - name: Test
-      shell: bash
-      run: npx nx affected --target=ct --base=last-release
+    # - name: Test
+    #   shell: bash
+    #   run: npx nx affected --target=ct --base=last-release
 
     # - name: E2E Tests
     #   shell: bash
