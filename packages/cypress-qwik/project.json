@@ -31,6 +31,12 @@
         "lintFilePatterns": ["packages/cypress-qwik/**/*.ts"]
       }
     },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "releaseAs": "patch"
+      }
+    },
     "version-publish": {
       "executor": "@jscutlery/semver:version",
       "options": {
