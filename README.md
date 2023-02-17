@@ -8,7 +8,7 @@
 <h1 align='center'>Cypress Qwik plugin</h1>
 
 <div align='center'>
-  The cypress component testing plugin <a href='https://github.com/BuilderIO/qwik'>Qwik</a>
+  The cypress component testing plugin for <a href='https://github.com/BuilderIO/qwik'>Qwik</a>
   <br><br>
 
   <a href='https://img.shields.io/npm/v/cypress-qwik?label=npm%20version'>
