@@ -52,8 +52,7 @@
     "publish": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
-        "access": "public",
-        "distFolderPath": "packages/cypress-ct-qwik"
+        "access": "public"
       }
     },
     "push-to-github": {
