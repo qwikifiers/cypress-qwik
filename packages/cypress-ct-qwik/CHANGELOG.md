@@ -2,6 +2,10 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.4](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.0.3...cypress-ct-qwik-0.0.4) (2023-02-19)
+
+
+
 ## [0.0.3](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.0.2...cypress-ct-qwik-0.0.3) (2023-02-18)
 
 
