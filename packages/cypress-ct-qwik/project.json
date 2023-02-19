@@ -11,6 +11,7 @@
         "outputPath": "dist/packages/cypress-ct-qwik",
         "main": "packages/cypress-ct-qwik/src/index.ts",
         "tsConfig": "packages/cypress-ct-qwik/tsconfig.lib.json",
+
         "assets": [
           "README.md",
           "CONTRIBUTING.md",
