@@ -1,7 +1,6 @@
 {
   "name": "cypress-ct-qwik",
   "version": "0.0.3",
-  "type": "module",
   "dependencies": {
     "@cypress/mount-utils": "^4.0.0"
   },
