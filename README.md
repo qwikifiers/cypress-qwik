@@ -52,6 +52,7 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
   component: {
     devServer: {
+      mode: 'test',
       bundler: 'vite',
     } as any,
   },
