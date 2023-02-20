@@ -1,4 +1,5 @@
-import { JSXNode, render } from '@builder.io/qwik';
+import type { JSXNode } from '@builder.io/qwik';
+import { render } from '@builder.io/qwik';
 import { getContainerEl } from '@cypress/mount-utils';
 
 // MIGHT NOT NEED CLEANUP
