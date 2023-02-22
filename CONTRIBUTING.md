@@ -11,7 +11,7 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help us keep
 
 ## Found a bug? Want a feature? - Submit an Issue
 
-[Choose an issue template](https://github.com/qwikifiers/cyress-qwik/issues/new/choose) to file a bug report / feature request.
+[Choose an issue template](https://github.com/qwikifiers/cypress-qwik/issues/new/choose) to file a bug report / feature request.
 
 <br/>
 
@@ -19,13 +19,13 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help us keep
 
 <br/>
 
-### ▶ 1. First - [Search this repo for existing PRs](https://github.com/qwikifiers/cyress-qwik/pulls) !
+### ▶ 1. First - [Search this repo for existing PRs](https://github.com/qwikifiers/cypress-qwik/pulls) !
 
 Try to find an open or closed PR that relates to the change you want to introduce.
 
 <br/>
 
-### ▶ 2. **Before you start coding - [find](https://github.com/qwikifiers/cyress-qwik/issues) / [create an issue](https://github.com/qwikifiers/cyress-qwik/issues/new/choose)**
+### ▶ 2. **Before you start coding - [find](https://github.com/qwikifiers/cypress-qwik/issues) / [create an issue](https://github.com/qwikifiers/cypress-qwik/issues/new/choose)**
 
 **Make sure there's an issue** describing the problem you're fixing, or documents the design for the feature you'd like to add.
 Discussing the design up front helps to ensure that we're ready to accept your work.
@@ -97,7 +97,7 @@ git push origin my-fix-branch
 
 ### ▶ 8. Create a PR
 
-In GitHub, create a pull request for `qwikifiers/cyress-qwik:main`.
+In GitHub, create a pull request for `qwikifiers/cypress-qwik:main`.
 
 Make sure you check the following checkbox "Allow edits from maintainers" -
 

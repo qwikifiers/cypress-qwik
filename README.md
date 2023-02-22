@@ -127,6 +127,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ## Related Links
 
 - [Cypress-Qwik Discord](https://discord.gg/PVWUUejrez)
+- [Qwik Discord](https://qwik.builder.io/chat)
 - [Qwik Docs](https://qwik.builder.io/)
 - [Cypress Docs](https://www.cypress.io/)
 
