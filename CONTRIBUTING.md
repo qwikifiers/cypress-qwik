@@ -56,15 +56,13 @@ git checkout -b my-fix-branch main
 
 <br/>
 
-### ▶ 4. Run the library
+### ▶ 4. Build the library
 
 - From the root of the project run `pnpm install`.
 
-- Then run `pnpm run dev --workspace=packages/website`.
+- Then run `nx build cypress-ct-qwik`.
 
 - Visit the URL printed in the console and you'll have a page opened with the suite of widgets.
-
-- Once you made some changes in either package (`headless`, `daisy` or `material`), you will see them immediately reflected on the page.
 
 ### ▶ 5. Make sure you add / modify tests
 
