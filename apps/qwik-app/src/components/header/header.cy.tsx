@@ -7,4 +7,12 @@ describe(`header component test`, () => {
 
     cy.contains(/docs/i).should('exist');
   });
+
+  it('should click on a button', () => {
+    mount(<Header />);
+
+    cy.contains(/opened/i).should('not.exist');
+    cy.contains(/click me/i).click();
+    cy.contains(/opened/i).should('exist');
+  });
 });

@@ -35,7 +35,6 @@
 - [Related Links](#related-links)
 - [License](#license)
 
-
 ## Installation
 
 ```console
@@ -57,7 +56,16 @@ export default defineConfig({
     } as any,
   },
 });
+```
 
+Add `addQwikLoader` to the `component.ts` file -
+
+```ts
+// component.ts
+
+import { addQwikLoader } from 'cypress-ct-qwik';
+
+addQwikLoader();
 ```
 
 ## Usage
@@ -69,16 +77,12 @@ import { mount } from 'cypress-ct-qwik';
 import MyComp from './my-comp';
 
 describe(`Qwik Component Test`, () => {
-  
   it('should find my link', () => {
-
     mount(<MyComp />);
 
     cy.contains('myLink').should('exist');
   });
 });
-
-
 ```
 
 <br/>
@@ -130,7 +134,6 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 - [Qwik Discord](https://qwik.builder.io/chat)
 - [Qwik Docs](https://qwik.builder.io/)
 - [Cypress Docs](https://www.cypress.io/)
-
 
 ## License
 

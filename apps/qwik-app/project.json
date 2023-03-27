@@ -69,7 +69,8 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/qwik-app/cypress.config.ts",
-        "testingType": "component"
+        "testingType": "component",
+        "skipServe": true
       }
     }
   },

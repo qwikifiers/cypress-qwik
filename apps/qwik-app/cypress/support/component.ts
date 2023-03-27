@@ -13,5 +13,8 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
+import { addQwikLoader } from 'cypress-ct-qwik';
 // Import commands.ts using ES2015 syntax:
 import './commands';
+
+addQwikLoader();
