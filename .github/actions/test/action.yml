@@ -14,13 +14,13 @@ runs:
       shell: bash
       run: npx nx affected:lint --base=last-release
 
-    # - name: Test
-    #   shell: bash
-    #   run: npx nx affected --target=ct --base=last-release
+    - name: Test
+      shell: bash
+      run: npx nx affected --target=ct --base=last-release
 
     # - name: E2E Tests
     #   shell: bash
   #   run: npx nx affected --target=e2e --base=last-release
 
-    # - name: Codecov upload
-    #   uses: codecov/codecov-action@v2
+  # - name: Codecov upload
+  #   uses: codecov/codecov-action@v2

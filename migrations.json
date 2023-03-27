@@ -1,0 +1,20 @@
+{
+  "migrations": [
+    {
+      "version": "0.11.0",
+      "description": "switch-to-qwik-nx-build-executor",
+      "cli": "nx",
+      "implementation": "./src/migrations/switch-to-qwik-nx-build-executor/switch-to-qwik-nx-build-executor",
+      "package": "qwik-nx",
+      "name": "switch-to-qwik-nx-build-executor"
+    },
+    {
+      "version": "0.13.1",
+      "description": "useClientEffect$ has been changed to useVisisbleTask$",
+      "cli": "nx",
+      "implementation": "./src/migrations/update-use-client-effect$-to-use-visisble-task$/update-use-client-effect$-to-use-visisble-task$",
+      "package": "qwik-nx",
+      "name": "update-use-client-effect$-to-use-visisble-task$"
+    }
+  ]
+}

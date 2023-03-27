@@ -1,9 +1,11 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
+import { component$, useSignal, useStylesScoped$ } from '@builder.io/qwik';
 import { QwikLogo } from '../icons/qwik';
 import styles from './header.css?inline';
 
 export default component$(() => {
   useStylesScoped$(styles);
+
+  const isOpenSignal = useSignal(false);
 
   return (
     <header>
@@ -11,6 +13,17 @@ export default component$(() => {
         <a href="https://qwik.builder.io/" target="_blank">
           <QwikLogo />
         </a>
+      </div>
+      <div>
+        <button
+          onClick$={() => {
+            isOpenSignal.value = true;
+          }}
+        >
+          Click Me
+        </button>
+
+        {isOpenSignal.value && <div>Opened</div>}
       </div>
       <ul>
         <li>
