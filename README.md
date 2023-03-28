@@ -118,8 +118,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://hirez.io/?utm_source=github&utm_medium=link&utm_campaign=cypress-qwik"><img src="https://avatars1.githubusercontent.com/u/1430726?v=4?s=100" width="100px;" alt="Shai Reznik"/><br /><sub><b>Shai Reznik</b></sub></a><br /><a href="https://github.com/qwikifiers/cypress-qwik/commits?author=shairez" title="Code">💻</a> <a href="https://github.com/qwikifiers/cypress-qwik/commits?author=shairez" title="Tests">⚠️</a> <a href="#infra-shairez" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/qwikifiers/cypress-qwik/commits?author=shairez" title="Documentation">📖</a> <a href="#maintenance-shairez" title="Maintenance">🚧</a> <a href="https://github.com/qwikifiers/cypress-qwik/pulls?q=is%3Apr+reviewed-by%3Ashairez" title="Reviewed Pull Requests">👀</a> <a href="#ideas-shairez" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jordanpowell88"><img src="https://avatars.githubusercontent.com/u/3605268?v=4?s=100" width="100px;" alt="Jordan Powell"/><br /><sub><b>Jordan Powell</b></sub></a><br /><a href="https://github.com/qwikifiers/cypress-qwik/commits?author=jordanpowell88" title="Code">💻</a> <a href="https://github.com/qwikifiers/cypress-qwik/commits?author=jordanpowell88" title="Tests">⚠️</a> <a href="#infra-jordanpowell88" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/qwikifiers/cypress-qwik/pulls?q=is%3Apr+reviewed-by%3Ajordanpowell88" title="Reviewed Pull Requests">👀</a> <a href="#ideas-jordanpowell88" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-jordanpowell88" title="Maintenance">🚧</a></td>
     </tr>
-   
   </tbody>
 </table>
 
