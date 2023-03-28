@@ -1,17 +1,23 @@
 {
   "name": "cypress-ct-qwik",
   "version": "0.0.6",
-  "type": "module",
   "exports": {
-    "node": "definition.js",
-    "require": "definition.js",
+    "node": "./definition.js",
     "default": "./src/index.js"
   },
+  "files": [
+    "package.json",
+    "definition.js",
+    "definition.d.ts",
+    "src/index.js",
+    "src/index.d.ts",
+    "src/lib"
+  ],
   "dependencies": {
     "@cypress/mount-utils": "^4.0.0"
   },
   "peerDependencies": {
     "cypress": ">=10.6.0",
-    "@builder.io/qwik": "^0.16.0"
+    "@builder.io/qwik": ">0.23.0"
   }
 }

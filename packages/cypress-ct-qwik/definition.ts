@@ -1,21 +1,21 @@
 import { defineComponentFramework } from 'cypress';
 
 const qwik: Cypress.CypressComponentDependency = {
-  type: 'cypress-ct-qwik',
+  type: 'qwik',
   name: 'Qwik',
   package: '@builder.io/qwik',
   installer: '@builder.io/qwik',
   description: 'The HTML-first framework',
-  minVersion: '^0.19.2',
+  minVersion: '>0.19.2',
 };
 
 const qwikCity: Cypress.CypressComponentDependency = {
-  type: 'cypress-ct-qwik',
+  type: 'qwik-ct',
   name: 'Qwik City',
   package: '@builder.io/qwik-city',
   installer: '@builder.io/qwik-city',
   description: 'The meta-framework for Qwik',
-  minVersion: '^0.4.0',
+  minVersion: '>0.4.0',
 };
 
 export default defineComponentFramework({
