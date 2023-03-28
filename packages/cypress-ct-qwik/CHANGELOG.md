@@ -2,6 +2,22 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.0.7](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.0.6...cypress-ct-qwik-0.0.7) (2023-03-28)
+
+
+### Bug Fixes
+
+* **cypress-ct-qwik:** add definition icon ([b991af1](https://github.com/qwikifiers/cypress-qwik/commit/b991af1a52118c39fa6b37506ada8d7002e44f23))
+* **cypress-ct-qwik:** build command ([a34add1](https://github.com/qwikifiers/cypress-qwik/commit/a34add1d3db1c1dad00be43377fe9a3d0eb8c5ae))
+
+
+### Features
+
+* added cypress framework api ([8c70392](https://github.com/qwikifiers/cypress-qwik/commit/8c7039258576c2567d5b41eb76a6c75384166c96))
+* **cypress-ct-qwik:** add 3rd party support ([f4e6cbc](https://github.com/qwikifiers/cypress-qwik/commit/f4e6cbc45c28fb03e3e093c5640c906ff3194872))
+
+
+
 ## [0.0.6](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.0.5...cypress-ct-qwik-0.0.6) (2023-03-27)
 
 
