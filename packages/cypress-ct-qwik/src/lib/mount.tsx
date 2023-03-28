@@ -13,6 +13,19 @@ export function mount(element: JSXNode) {
 
   const renderResultPromise = render(root, element);
 
+  Cypress.log({
+    name: 'mount',
+    message: 'Component',
+    consoleProps: () => {
+      return {
+        // // @ts-ignore protect the use of jsx functional components use ReactNode
+        props: element?.props,
+        description: 'Mounted Qwik component',
+        home: 'https://github.com/qwikifiers/cypress-qwik',
+      };
+    },
+  });
+
   return cy.wrap(renderResultPromise, { log: false }).then((renderResult) => {
     destroy = (renderResult as RenderResult).cleanup;
     return renderResult;

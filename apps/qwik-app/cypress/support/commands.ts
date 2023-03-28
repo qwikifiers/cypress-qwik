@@ -1,4 +1,7 @@
 /// <reference types="cypress" />
+
+import { mount } from "cypress-ct-qwik";
+
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -14,6 +17,7 @@ declare namespace Cypress {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface Chainable<Subject> {
     login(email: string, password: string): void;
+    mount: typeof mount
   }
 }
 //
@@ -21,6 +25,8 @@ declare namespace Cypress {
 Cypress.Commands.add('login', (email, password) => {
   console.log('Custom command example: Login', email, password);
 });
+
+Cypress.Commands.add('mount', mount)
 //
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })

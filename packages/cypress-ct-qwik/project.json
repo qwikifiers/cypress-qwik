@@ -4,14 +4,14 @@
   "sourceRoot": "packages/cypress-ct-qwik/src",
   "projectType": "library",
   "targets": {
-    "build": {
-      "dependsOn": ["build-definition"],
+    "build-mount": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/cypress-ct-qwik",
         "main": "packages/cypress-ct-qwik/src/index.ts",
         "tsConfig": "packages/cypress-ct-qwik/tsconfig.lib.json",
+        "clean": false,
 
         "assets": [
           "README.md",
@@ -32,8 +32,25 @@
       "options": {
         "outputPath": "dist/packages/cypress-ct-qwik",
         "main": "packages/cypress-ct-qwik/definition.ts",
-        "tsConfig": "packages/cypress-ct-qwik/tsconfig.definition.json"
+        "tsConfig": "packages/cypress-ct-qwik/tsconfig.definition.json",
+        "clean": false
       }
+    },
+    "copy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cp -r dist/packages/cypress-ct-qwik node_modules"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx run cypress-ct-qwik:build-mount --skip-nx-cache && nx run cypress-ct-qwik:build-definition --skip-nx-cache"
+        ]
+      },
+      "outputPath": "node_modules/cypress-ct-qwik",
+      "outputs": ["{options.outputPath}"]
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",

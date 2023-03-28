@@ -1,9 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "outDir": "../../dist/out-tsc",
+    "target": "ES2015",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "declaration": true,
+    "lib": ["ES6"],
     "types": ["node", "cypress"],
     "importHelpers": false
   },

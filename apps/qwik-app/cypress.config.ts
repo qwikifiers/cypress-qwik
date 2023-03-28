@@ -1,3 +1,10 @@
-import { defineConfig } from 'cypress';
+import { defineConfig } from "cypress";
 
-export default defineConfig({});
+export default defineConfig({
+  component: {
+    devServer: {
+      framework: "cypress-ct-qwik",
+      bundler: "vite",
+    },
+  },
+});
