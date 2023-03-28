@@ -2,7 +2,11 @@
   "name": "cypress-ct-qwik",
   "version": "0.0.6",
   "type": "module",
-  "exports": "./src/index.js",
+  "exports": {
+    "node": "definition.js",
+    "require": "definition.js",
+    "default": "./src/index.js"
+  },
   "dependencies": {
     "@cypress/mount-utils": "^4.0.0"
   },

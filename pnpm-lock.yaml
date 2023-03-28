@@ -28,7 +28,7 @@ importers:
       autoprefixer: ^10.4.13
       commitizen: ^4.3.0
       commitlint: ^17.4.3
-      cypress: ^12.5.1
+      cypress: 12.8.1
       cz-conventional-changelog: ^3.3.0
       eslint: 8.36.0
       eslint-config-prettier: 8.6.0
@@ -59,11 +59,11 @@ importers:
       '@commitlint/cli': 17.4.3
       '@commitlint/config-angular': 17.4.3
       '@commitlint/config-conventional': 17.4.3
-      '@cypress/code-coverage': 3.10.0_cypress@12.5.1
+      '@cypress/code-coverage': 3.10.0_cypress@12.8.1
       '@cypress/vite-dev-server': 2.2.3_vite@4.1.2
       '@jscutlery/semver': 2.30.1
       '@nrwl/cli': 15.8.9
-      '@nrwl/cypress': 15.8.9_b27q6gcc3qoy5n77kexr4blq3e
+      '@nrwl/cypress': 15.8.9_6aib6l4o2rqthbejw5v75ev4nq
       '@nrwl/eslint-plugin-nx': 15.8.9_jghybr75ou4pjfjdpwnzrfqzni
       '@nrwl/js': 15.8.9_jkwosgj3wrsgtmxzeyg3xqckcu
       '@nrwl/linter': 15.8.9_jkwosgj3wrsgtmxzeyg3xqckcu
@@ -79,7 +79,7 @@ importers:
       autoprefixer: 10.4.13_postcss@8.4.21
       commitizen: 4.3.0
       commitlint: 17.4.3
-      cypress: 12.5.1
+      cypress: 12.8.1
       cz-conventional-changelog: 3.3.0
       eslint: 8.36.0
       eslint-config-prettier: 8.6.0_eslint@8.36.0
@@ -1965,7 +1965,7 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@cypress/code-coverage/3.10.0_cypress@12.5.1:
+  /@cypress/code-coverage/3.10.0_cypress@12.8.1:
     resolution:
       {
         integrity: sha512-K5pW2KPpK4vKMXqxd6vuzo6m9BNgpAv1LcrrtmqAtOJ1RGoEILXYZVost0L6Q+V01NyY7n7jXIIfS7LR3nP6YA==,
@@ -1975,7 +1975,7 @@ packages:
     dependencies:
       '@cypress/webpack-preprocessor': 5.16.3
       chalk: 4.1.2
-      cypress: 12.5.1
+      cypress: 12.8.1
       dayjs: 1.10.7
       debug: 4.3.4
       execa: 4.1.0
@@ -2667,7 +2667,7 @@ packages:
       - debug
     dev: true
 
-  /@nrwl/cypress/15.8.9_b27q6gcc3qoy5n77kexr4blq3e:
+  /@nrwl/cypress/15.8.9_6aib6l4o2rqthbejw5v75ev4nq:
     resolution:
       {
         integrity: sha512-a9ud7Um1xPCQevWBVTDEx7mN0V7k7PXWrD1Dym3xIk1fxd7uKiKoIZR7pGY8PIp1hEDSnWTJsmTUxuI09dFs2w==,
@@ -2683,7 +2683,7 @@ packages:
       '@nrwl/linter': 15.8.9_jkwosgj3wrsgtmxzeyg3xqckcu
       '@nrwl/workspace': 15.8.9_ctxmzhq3xstovqjsllvgpoxqru
       '@phenomnomnominal/tsquery': 4.1.1_typescript@5.0.2
-      cypress: 12.5.1
+      cypress: 12.8.1
       dotenv: 10.0.0
       semver: 7.3.4
     transitivePeerDependencies:
@@ -5680,10 +5680,10 @@ packages:
       cssom: 0.3.8
     dev: true
 
-  /cypress/12.5.1:
+  /cypress/12.8.1:
     resolution:
       {
-        integrity: sha512-ZmCmJ3lsyeOpBfh410m5+AO2CO1AxAzFBt7k6/uVbNcrNZje1vdiwYTpj2ksPKg9mjr9lR6V8tmlDNMvr4H/YQ==,
+        integrity: sha512-lIFbKdaSYAOarNLHNFa2aPZu6YSF+8UY4VRXMxJrFUnk6RvfG0AWsZ7/qle/aIz30TNUD4aOihz2ZgS4vuQVSA==,
       }
     engines: { node: ^14.0.0 || ^16.0.0 || >=18.0.0 }
     hasBin: true

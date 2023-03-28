@@ -5,6 +5,7 @@
   "projectType": "library",
   "targets": {
     "build": {
+      "dependsOn": ["build-definition"],
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
@@ -23,6 +24,15 @@
             "output": "./assets"
           }
         ]
+      }
+    },
+    "build-definition": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/cypress-ct-qwik",
+        "main": "packages/cypress-ct-qwik/definition.ts",
+        "tsConfig": "packages/cypress-ct-qwik/tsconfig.definition.json"
       }
     },
     "lint": {
