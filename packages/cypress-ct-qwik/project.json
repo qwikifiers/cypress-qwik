@@ -46,8 +46,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "nx run cypress-ct-qwik:build-mount",
-          "nx run cypress-ct-qwik:build-definition"
+          "nx run cypress-ct-qwik:build-mount --skip-nx-cache && nx run cypress-ct-qwik:build-definition --skip-nx-cache"
         ]
       },
       "outputPath": "node_modules/cypress-ct-qwik",
