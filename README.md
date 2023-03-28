@@ -43,22 +43,9 @@ npm install -D cypress-ct-qwik
 
 ## Configuring Cypress
 
-```ts
-// cypress.config.ts
-
-import { defineConfig } from 'cypress';
-
-export default defineConfig({
-  component: {
-    devServer: {
-      mode: 'test',
-      bundler: 'vite',
-    } as any,
-  },
-});
-```
-
-Add `addQwikLoader` to the `component.ts` file -
+1. Run cypress (in watch mode) after installation
+2. Follow the configuration wizard
+3. Add `addQwikLoader` to the `component.ts` file -
 
 ```ts
 // component.ts
@@ -68,17 +55,34 @@ import { addQwikLoader } from 'cypress-ct-qwik';
 addQwikLoader();
 ```
 
+4. Add the `mount` command to `support/commands.ts` -
+
+```ts
+// commands.ts
+
+import { mount } from 'cypress-ct-qwik';
+
+declare namespace Cypress {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface Chainable<Subject> {
+    mount: typeof mount;
+  }
+}
+//
+
+Cypress.Commands.add('mount', mount);
+```
+
 ## Usage
 
 ```ts
 // some-test.cy.ts
 
-import { mount } from 'cypress-ct-qwik';
 import MyComp from './my-comp';
 
 describe(`Qwik Component Test`, () => {
   it('should find my link', () => {
-    mount(<MyComp />);
+    cy.mount(<MyComp />);
 
     cy.contains('myLink').should('exist');
   });
