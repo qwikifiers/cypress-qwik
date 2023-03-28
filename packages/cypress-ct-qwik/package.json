@@ -17,7 +17,7 @@
     "@cypress/mount-utils": "^4.0.0"
   },
   "peerDependencies": {
-    "cypress": ">=10.6.0",
+    "cypress": ">=12.8.1",
     "@builder.io/qwik": ">0.23.0"
   }
 }

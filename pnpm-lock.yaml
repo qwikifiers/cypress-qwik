@@ -166,7 +166,7 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       cypress:
-        specifier: '>=10.6.0'
+        specifier: '>=12.8.1'
         version: 12.8.1
 
 packages:
