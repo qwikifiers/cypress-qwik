@@ -1,6 +1,6 @@
 {
   "name": "cypress-ct-qwik",
-  "version": "0.0.9",
+  "version": "0.2.0",
   "exports": {
     "node": "./definition.js",
     "default": "./src/index.js"
