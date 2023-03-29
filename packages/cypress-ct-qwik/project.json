@@ -45,6 +45,7 @@
     "build": {
       "executor": "nx:run-commands",
       "options": {
+        "outputPath": "dist/packages/cypress-ct-qwik",
         "commands": [
           "nx run cypress-ct-qwik:build-mount --skip-nx-cache && nx run cypress-ct-qwik:build-definition --skip-nx-cache"
         ]
