@@ -17,13 +17,13 @@ export default component$(() => {
       <div>
         <button
           onClick$={() => {
-            isOpenSignal.value = true;
+            isOpenSignal.value = !isOpenSignal.value;
           }}
         >
           Click Me
         </button>
 
-        {isOpenSignal.value && <div>Opened</div>}
+        <div>{isOpenSignal.value ? 'Opened' : 'Closed' }</div>
       </div>
       <ul>
         <li>
