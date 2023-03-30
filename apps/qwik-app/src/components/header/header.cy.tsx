@@ -11,7 +11,9 @@ describe(`header component test`, () => {
     cy.mount(<Header />);
 
     cy.contains(/opened/i).should('not.exist');
+    cy.contains('Closed')
     cy.contains(/click me/i).click();
     cy.contains(/opened/i).should('exist');
+    cy.contains('Opened')
   });
 });
