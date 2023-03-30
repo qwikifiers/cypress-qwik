@@ -2,6 +2,15 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+# [0.3.0](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.2.0...cypress-ct-qwik-0.3.0) (2023-03-30)
+
+
+### Bug Fixes
+
+* **cypress-ct-qwik:** move addQwikLoader out of mount ([b9076f2](https://github.com/qwikifiers/cypress-qwik/commit/b9076f238270a20f54df7e9262a78a5e858a647c))
+
+
+
 # [0.2.0](https://github.com/qwikifiers/cypress-qwik/compare/cypress-ct-qwik-0.1.0...cypress-ct-qwik-0.2.0) (2023-03-29)
 
 
