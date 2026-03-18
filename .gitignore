@@ -2,8 +2,14 @@
 dist
 /server
 
+# Package tarballs
+*.tgz
+
 # Development
 node_modules
+
+# Temp files
+tmp
 
 # Cache
 .cache
@@ -29,6 +35,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+# Package manager lock files (this project uses pnpm)
+package-lock.json
+yarn.lock
 
 # Editor
 .idea
