@@ -1,6 +1,6 @@
 import { render } from '@qwik.dev/core';
 import { getContainerEl, setupHooks } from '@cypress/mount-utils';
-import { RenderResult } from '@qwik.dev/core/internal';
+import { JSXNode, RenderResult } from '@qwik.dev/core/internal';
 
 let destroyVNodes: (() => void) | undefined;
 
@@ -31,7 +31,7 @@ function teardown() {
   root.innerHTML = '';
 }
 
-export function mount(element: any) {
+export function mount(element: JSXNode, options = { awaitRender: true }) {
   // Always tear down before mounting. Handles both same-test re-mounts and test-to-test transitions.
   teardown();
   const root = getContainerEl();
@@ -47,6 +47,18 @@ export function mount(element: any) {
       };
     },
   });
+  // `awaitRender: false` lets subsequent Cypress commands run before Qwik's render
+  // promise resolves. Needed for testing transient states (e.g. loading UI shown by
+  // a `useVisibleTask$` whose async work would otherwise block `cy.mount`, since
+  // Qwik V2's `render()` awaits all queued chores before resolving).
+  // Cleanup is still captured once the promise settles in the background, so the
+  // next test's `teardown()` works correctly.
+  if (options.awaitRender === false) {
+    renderResultPromise.then((renderResult) => {
+      destroyVNodes = (renderResult as RenderResult).cleanup;
+    });
+    return;
+  }
   return cy
     .wrap(renderResultPromise, { log: false })
     .then((renderResult: unknown) => {
