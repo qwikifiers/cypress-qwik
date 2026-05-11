@@ -1,6 +1,7 @@
-import type { JSXNode, RenderResult } from '@builder.io/qwik';
-import { render } from '@builder.io/qwik';
+import type { JSXNode } from '@qwik.dev/core';
+import { render } from '@qwik.dev/core';
 import { getContainerEl, setupHooks } from '@cypress/mount-utils';
+import { RenderResult } from '@qwik.dev/core/internal';
 
 let destroy: () => void | undefined;
 
@@ -26,10 +27,12 @@ export function mount(element: JSXNode) {
     },
   });
 
-  return cy.wrap(renderResultPromise, { log: false }).then((renderResult) => {
-    destroy = (renderResult as RenderResult).cleanup;
-    return renderResult;
-  });
+  return cy
+    .wrap(renderResultPromise, { log: false })
+    .then((renderResult: RenderResult) => {
+      destroy = renderResult.cleanup;
+      return renderResult;
+    });
 }
 
 setupHooks(cleanup);

@@ -1,5 +1,5 @@
-import { qwikVite } from '@builder.io/qwik/optimizer';
-import { qwikCity } from '@builder.io/qwik-city/vite';
+import { qwikVite } from '@qwik.dev/core/optimizer';
+import { qwikRouter } from '@qwik.dev/router/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
@@ -7,7 +7,7 @@ import { qwikNxVite } from 'qwik-nx/plugins';
 export default defineConfig({
   plugins: [
     qwikNxVite(),
-    qwikCity(),
+    qwikRouter(),
     qwikVite({
       client: {
         outDir: '../../dist/apps/qwik-app/client',

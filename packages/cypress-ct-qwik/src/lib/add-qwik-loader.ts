@@ -1,4 +1,4 @@
-import { QWIK_LOADER } from '@builder.io/qwik/loader';
+import { QWIK_LOADER } from '@qwik.dev/core/loader';
 
 export function addQwikLoader() {
   const scriptEl = document.createElement('script');
