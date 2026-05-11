@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "declaration": true,
     "lib": ["ES6"],
     "types": ["node", "cypress"],

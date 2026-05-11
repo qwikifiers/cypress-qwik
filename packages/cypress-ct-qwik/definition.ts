@@ -3,17 +3,17 @@ import { defineComponentFramework } from 'cypress';
 const qwik: Cypress.CypressComponentDependency = {
   type: 'qwik',
   name: 'Qwik',
-  package: '@builder.io/qwik',
-  installer: '@builder.io/qwik',
+  package: '@qwik.dev/core',
+  installer: '@qwik.dev/core',
   description: 'The HTML-first framework',
   minVersion: '>0.19.2',
 };
 
-const qwikCity: Cypress.CypressComponentDependency = {
+const qwikRouter: Cypress.CypressComponentDependency = {
   type: 'qwik-ct',
   name: 'Qwik City',
-  package: '@builder.io/qwik-city',
-  installer: '@builder.io/qwik-city',
+  package: '@qwik.dev/router',
+  installer: '@qwik.dev/router',
   description: 'The meta-framework for Qwik',
   minVersion: '>0.4.0',
 };
@@ -52,7 +52,7 @@ export default defineComponentFramework({
    * the user selected Vite or webpack.
    */
   dependencies: (bundler) => {
-    return [qwik, qwikCity];
+    return [qwik, qwikRouter];
   },
 
   icon: `<svg style="height: auto; width: 100%" viewBox="0 0 52 60"
